@@ -1,4 +1,0 @@
-alwaysblind/gh-actions:
-  - syncable-file
-alwaysblind/synced-repo:
-  - syncable-file
