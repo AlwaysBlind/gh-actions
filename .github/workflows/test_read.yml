@@ -23,6 +23,7 @@ jobs:
 
       - name: Install dependencies 📦
         run: yarn install --frozen-lockfile
+        working-directory: ./src
           
       - name: Test action
         run: node ./src/test.ts
