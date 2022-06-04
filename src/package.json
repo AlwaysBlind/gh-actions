@@ -3,6 +3,7 @@
     "@octokit/core": "^3.6.0",
     "@octokit/types": "^6.34.0",
     "dotenv": "^16.0.1",
+    "js-yaml": "^4.1.0",
     "node": "^17.7.2"
   },
   "devDependencies": {
