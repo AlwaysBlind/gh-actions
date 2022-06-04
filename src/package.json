@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@octokit/core": "^3.6.0",
+    "@octokit/types": "^6.34.0",
+    "dotenv": "^16.0.1",
+    "node": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.39"
+  }
+}
