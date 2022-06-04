@@ -6,7 +6,7 @@ console.log("Hello world");
 
 const dotenv = require("dotenv");
 dotenv.config();
-const token = process.env.GH_PAT;
+const token = process.env.GH_PAT || process.env.GITHUB_TOKEN;
 console.log(token);
 
 const octokit = new Octokit({ auth: token });
