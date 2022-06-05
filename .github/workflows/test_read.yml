@@ -23,10 +23,14 @@ jobs:
 
       - name: Install dependencies 📦
         run: yarn install --frozen-lockfile
-        working-directory: ./src
+        working-directory: ./src/javascript
+
+      - name: Build dists
+        run: yarn tsc
+        working-directory: ./src/javascript
           
       - name: Test action
-        run: node ./src/dist/graphql.js
+        run: node ./src/javascript/dist/graphql.js
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - name: Run GitHub File Sync
