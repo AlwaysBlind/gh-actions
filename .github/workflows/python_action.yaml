@@ -1,4 +1,4 @@
-name: Test action
+name: Python Test action
 
 # Controls when the workflow will run
 on:

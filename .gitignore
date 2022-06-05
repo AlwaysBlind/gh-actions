@@ -1,3 +1,4 @@
 src/javascript/node_modules
 .env
 .github/sync.yml
+.vscode
