@@ -24,6 +24,6 @@ jobs:
 
       - name: Run script
         run: python sync.py
-        with:
-          GH_PAT: ${{ secrets.GH_PAT }}
         working-directory: ./src/python
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
