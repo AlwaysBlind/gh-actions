@@ -26,7 +26,7 @@ jobs:
         working-directory: ./src
           
       - name: Test action
-        run: node ./src/graphql.ts
+        run: node ./src/dist/graphql.js
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - name: Run GitHub File Sync
