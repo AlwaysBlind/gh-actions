@@ -25,3 +25,5 @@ jobs:
       - name: Run script
         run: python sync.py
         working-directory: ./src/python
+        with:
+          GH_PAT: ${{ secrets.GH_PAT }}
