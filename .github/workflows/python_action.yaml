@@ -23,5 +23,5 @@ jobs:
         working-directory: ./src/python
 
       - name: Run script
-        run: python scan.py
+        run: python sync.py
         working-directory: ./src/python
