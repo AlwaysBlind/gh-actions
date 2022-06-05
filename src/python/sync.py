@@ -10,7 +10,7 @@ REPO_OWNER = "alwaysblind"
 
 load_dotenv()
 
-token = os.getenv("GH_PAT")
+token = os.getenv("GITHUB_TOKEN")
 
 # Select your transport with a defined url endpoint
 transport = AIOHTTPTransport(
