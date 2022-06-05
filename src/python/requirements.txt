@@ -1,0 +1,5 @@
+gql==3.3.0
+graphql-core==3.2.1
+idna==3.3
+multidict==6.0.2
+yarl==1.7.2

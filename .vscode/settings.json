@@ -1,0 +1,5 @@
+{
+    "python.formatting.provider": "black",
+    "python.analysis.extraPaths": ["src/python"],
+    "python.defaultInterpreterPath": "src/python/venv/bin/python3.10"
+}
