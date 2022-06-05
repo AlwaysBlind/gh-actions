@@ -8,4 +8,6 @@ gql==3.3.0
 graphql-core==3.2.1
 idna==3.3
 multidict==6.0.2
+python-dotenv==0.20.0
+PyYAML==6.0
 yarl==1.7.2
