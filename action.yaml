@@ -10,8 +10,5 @@ runs:
     - name: Sync
       shell: bash
       run: "node src/javascript/dist/index.js"
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-
     - name: Run GitHub File Sync
       uses: BetaHuhn/repo-file-sync-action@v1.17.17
