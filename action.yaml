@@ -2,4 +2,4 @@ name: 'Test sync stuff'
 description: "Sync stuff"
 runs:
   using: "node16"
-  main: "src/javascript/dist/index.js"
+  main: "src/javascript/dist/graphql.js"
