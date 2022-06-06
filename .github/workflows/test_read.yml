@@ -18,11 +18,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
       - name: Test action
-        run: node ./src/javascript/dist/index.js
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        # run: node ./src/javascript/dist/index.js
+        # env:
+        #   GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
       - name: Run GitHub File Sync
-        uses: BetaHuhn/repo-file-sync-action@latest
+        uses: BetaHuhn/repo-file-sync-action@v1.17.17
         with:
           GH_PAT: ${{ secrets.GH_PAT }}
