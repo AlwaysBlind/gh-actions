@@ -22,7 +22,7 @@ jobs:
           node-version: '16'
 
       - name: Test action
-        run: node ./src/javascript/dist/graphql.js
+        run: node ./src/javascript/dist/index.js
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
