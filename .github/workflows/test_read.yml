@@ -17,7 +17,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-      - name: Test action
+      # - name: Test action
         # run: node ./src/javascript/dist/index.js
         # env:
         #   GITHUB_TOKEN: ${{ secrets.GH_PAT }}
