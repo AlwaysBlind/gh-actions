@@ -1,15 +1,12 @@
-import { Octokit } from "@octokit/core";
 import yaml from "js-yaml";
 import fs from "fs";
-import github = require("@actions/github");
+const github = require("@actions/github");
 console.log("Hello world");
 
 import dotenv from "dotenv";
 dotenv.config();
 const token = process.env.GH_PAT || process.env.GITHUB_TOKEN;
 console.log(token);
-
-const octokit = new Octokit({ auth: token });
 
 let { graphql } = require("@octokit/graphql");
 
