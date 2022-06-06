@@ -1,6 +1,7 @@
 import { Octokit } from "@octokit/core";
 import yaml from "js-yaml";
 import fs from "fs";
+import github = require("@actions/github");
 console.log("Hello world");
 
 import dotenv from "dotenv";
@@ -13,6 +14,8 @@ const octokit = new Octokit({ auth: token });
 let { graphql } = require("@octokit/graphql");
 
 const main = async () => {
+  const payload = JSON.stringify(github.context.payload, undefined, 2);
+  console.log(`The event payoad :${payload}`);
   graphql = graphql.defaults({
     headers: {
       authorization: `token ${token}`,
